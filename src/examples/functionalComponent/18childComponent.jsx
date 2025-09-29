@@ -9,7 +9,7 @@ const childComponent = (props) => {
            <input type='text' onChange={(e) => {props.func(e.target.value)} }/>
         </div>
             
-        </>
+        </> 
     );
 };
 

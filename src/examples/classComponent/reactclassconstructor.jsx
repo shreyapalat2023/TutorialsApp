@@ -18,8 +18,7 @@ export default class ReactClassConstructor extends Component {
           <p>
 
             The constructor is no different in React. This can connect event handlers to the component and/or initialize the component’s local state. Before the component is mounted, the constructor() function is shot, and, like most things in React, it has a few rules that you can follow when using them.</p>
-
-        </div>
+            </div>
       </>
     )
   }

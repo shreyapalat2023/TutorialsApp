@@ -11,6 +11,7 @@ import {
 } from "react-router-dom";
 // import Tutorialcompo from "./Component/tutorialComp.jsx"
 import HeaderCompo from "./Component/headerFile.jsx"
+import HomePage from "./homePage.jsx";
 import ExampleCompo from "./Component/exampleComp.jsx"
 import InterviewQuestionCompo from "./Component/InterviewQuestionCompo.jsx"
 import { Suspense, lazy } from 'react';
@@ -27,7 +28,7 @@ const router = createBrowserRouter([
             <>
                 <div>
                     <HeaderCompo />
-                    <h1>Hello world</h1>
+                    <HomePage />
                 </div>
             </>
         ),
@@ -74,7 +75,11 @@ const router = createBrowserRouter([
                         <>
 
                             <div>
-                                <Suspense fallback={<>Loading..</>}>
+                                <Suspense fallback={<div className="d-flex justify-content-center align-items-center" style={{ minHeight: "200px" }}>
+                                    <div className="spinner-border text-primary" role="status">
+                                        <span className="visually-hidden">Loading...</span>
+                                    </div>
+                                </div>}>
                                     <ClassCompoRoute />
                                 </Suspense>
                             </div>
@@ -102,14 +107,14 @@ const router = createBrowserRouter([
     {
         path: "interviewquestion",
         element:
-        <>
+            <>
 
-         <div>
-            <HeaderCompo />
+                <div>
+                    <HeaderCompo />
 
-            <InterviewQuestionCompo />
-        </div>
-        </>
+                    <InterviewQuestionCompo />
+                </div>
+            </>
 
     }
 ]);
