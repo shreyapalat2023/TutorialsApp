@@ -16,7 +16,7 @@ const FooterCompo = () => {
                     <section className='mb-4'>
                         <MDBBtn
                             floating
-                            className='m-1'
+                            className='m-1 footer-btn'
                             style={{ backgroundColor: '#3b5998' }}
                             href='#!'
                             role='button'
@@ -26,7 +26,7 @@ const FooterCompo = () => {
 
                         <MDBBtn
                             floating
-                            className='m-1'
+                            className='m-1 footer-btn'
                             style={{ backgroundColor: '#55acee' }}
                             href='#!'
                             role='button'
@@ -36,7 +36,7 @@ const FooterCompo = () => {
 
                         <MDBBtn
                             floating
-                            className='m-1'
+                            className='m-1 footer-btn'
                             style={{ backgroundColor: '#dd4b39' }}
                             href='#!'
                             role='button'
@@ -45,7 +45,7 @@ const FooterCompo = () => {
                         </MDBBtn>
                         <MDBBtn
                             floating
-                            className='m-1'
+                            className='m-1 footer-btn'
                             style={{ backgroundColor: '#ac2bac' }}
                             href='#!'
                             role='button'
@@ -55,7 +55,7 @@ const FooterCompo = () => {
 
                         <MDBBtn
                             floating
-                            className='m-1'
+                            className='m-1 footer-btn'
                             style={{ backgroundColor: '#0082ca' }}
                             href='#!'
                             role='button'
@@ -65,7 +65,7 @@ const FooterCompo = () => {
 
                         <MDBBtn
                             floating
-                            className='m-1'
+                            className='m-1 footer-btn'
                             style={{ backgroundColor: '#333333' }}
                             href='#!'
                             role='button'

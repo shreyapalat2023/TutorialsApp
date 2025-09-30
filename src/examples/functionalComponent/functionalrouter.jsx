@@ -23,13 +23,17 @@ import ImperativeHandleFunction from "./21ImperativeHandle/01FunctionImperativeH
 import LoginLogoutUseContextEx from "./LoginLogoutUseContext/01authContext.jsx"
 import InterviewTask from "./HoneyCom/01ParentCompo.jsx"
 import UseContextBooksDataCompo from "./BooksDataExample/BooksContext.jsx"
+import Footer from "../../FooterCompo.jsx";
 // import ComponentInReact from "./ComponentInReact.jsx"
 
 const FunctionalComponentRoute = () => {
     const routes = useRoutes([
         {
             path: "/",
-            element: <FunctionalCompoMenu />,
+            element: <>
+
+            <FunctionalCompoMenu /><Footer/>
+            </>,
             children: [
                 {
                     path: "functionalcomponentintro",

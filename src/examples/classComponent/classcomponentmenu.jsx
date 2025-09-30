@@ -17,7 +17,7 @@ export default class ClassComponMenu extends Component {
           <div className="row justify-content-center">
             <div className="col-md-12">
               <div className="card shadow-lg border-0 rounded-4">
-                <div className="card-header bg-secondary text-white text-center fw-bold fs-4 rounded-top">
+                <div className="card-header bg-light text-primary text-center fw-bold fs-4 rounded-top">
                   Class Component Topics
                 </div>
                 <div className="card-body p-4">

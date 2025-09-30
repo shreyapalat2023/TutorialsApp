@@ -13,7 +13,7 @@ const FunctionalCompoState = () => {
 
     return (
         <>
-            <h1 className='text-center'>States in Functional Component</h1>
+            <h1>States in Functional Component</h1>
             <h3>What is State in ReactJS?</h3>
             <p> The state is a built-in React object that is used to contain data or information about the component. A component's state can change over time; whenever it changes, the component re-renders.</p>
             <p> What does calling useState do? It declares a “state variable”. Our variable is called count but we could call it anything else, like banana. This is a way to “preserve” some values between the function calls —<code className='prettyprinted'><span className='pln'>useState </span></code> is a new way to use the exact same capabilities that this.state provides in a class. Normally, variables “disappear” when the function exits but state variables are preserved by React.</p>

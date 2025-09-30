@@ -23,10 +23,10 @@ const TextForm = (props) => {
     }
     const handlCapitalizedClick = () => {
         const newText = text.split(" ");
-        for(let i = 0; i < text.length; i++) {
-            text[i] = text[i][0].toUpperCase() + text[i].substring(1);
+        for (let i = 0; i < newText.length; i++) {
+            newText[i] = newText[i][0].toUpperCase() + newText[i].substring(1);
         }
-        setText(newText);
+        setText(newText.join(" "));
     }
     return (
         <>
@@ -34,17 +34,11 @@ const TextForm = (props) => {
             <div className=' container my-3'>
                 <textarea className='form-control' id='myBox' rows="8" value={text} onChange={handleonchange}></textarea>
                 <div className='my-3'>
-
                     <button className='btn btn-primary mx-2' onClick={handleUpperCaseClick}>Convert to Uppercase</button>
-
                     <button className='btn btn-primary mx-2' onClick={handleLowerCaseClick}>Convert to Lowercase</button>
-
                     <button className='btn btn-danger mx-2' onClick={handlClearClick}>Clear</button>
-
-                    
-                    <button className='btn btn-primary mx-2' onClick={handlCapitalizedClick}>Capitalized Case</button>
+                    <button className='btn btn-primary mx-2 mt-2' onClick={handlCapitalizedClick}>Capitalized Case</button>
                 </div>
-
             </div>
             <div className='container'>
                 <h2>Your Text Summary</h2>

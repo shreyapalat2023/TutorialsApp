@@ -6,6 +6,7 @@ import ReactClassProps from "./reactclassprops.jsx"
 import ReactClassConstructor from "./reactclassconstructor.jsx"
 import ReactStateIncDec from "./reactstateincdec.jsx"
 import LifeCycleCompo from "./StateAndLifeCycle.jsx"
+import Footer from "../../FooterCompo.jsx";
 
 
 const ClassComponentRoute = () => {
@@ -14,7 +15,9 @@ const ClassComponentRoute = () => {
         [{
 
             path: "/",
-            element: <ClassCompoMenu />,
+            element: <>
+                <ClassCompoMenu /><Footer />
+            </>,
             children: [
                 {
 
@@ -42,7 +45,7 @@ const ClassComponentRoute = () => {
                 },
                 {
                     path: "lifecycle",
-                    element: <LifeCycleCompo/>
+                    element: <LifeCycleCompo />
                 }
             ]
         }

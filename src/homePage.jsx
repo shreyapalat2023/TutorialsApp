@@ -1,5 +1,3 @@
-
-import React from 'react';
 import { MDBBtn } from 'mdb-react-ui-kit';
 import workingwomen from "./women-working.png";
 import HomeCardCompo from './HomeCardCompo';
@@ -17,16 +15,34 @@ const HomeCompo = () => {
                         <div className='text-white'>
                             <h1 className='mb-3'>Learning Courses Online</h1>
                             <h4 className='mb-3'>We are here to help you.</h4>
-                            <MDBBtn tag="a" outline size="lg">
+                            <MDBBtn
+                                tag="a"
+                                outline
+                                size="lg"
+                                style={{
+                                    transition: "all 0.3s ease",
+                                }}
+                                onMouseEnter={e => {
+                                    // e.currentTarget.style.backgroundColor = "#ffffff";
+                                    e.currentTarget.style.color = "#fff";
+                                    e.currentTarget.style.transform = "scale(1.05)";
+                                }}
+                                onMouseLeave={e => {
+                                    e.currentTarget.style.backgroundColor = "transparent";
+                                    // e.currentTarget.style.color = "#fff";
+                                    e.currentTarget.style.transform = "scale(1)";
+                                }}
+                            >
                                 START A COURSE
                             </MDBBtn>
+
                         </div>
                     </div>
                 </div>
             </div>
 
-            <HomeCardCompo/>
-            <FooterCompo/>
+            <HomeCardCompo />
+            <FooterCompo />
         </>
     );
 };

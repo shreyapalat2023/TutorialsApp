@@ -1,17 +1,36 @@
 import React from 'react';
-import { Outlet } from 'react-router-dom';
+import { Outlet, Link } from 'react-router-dom';
 import RouterIntQuestion from './RouterIntQuestion.jsx';
 import LazyLoadingIntQueCompo from './LazyLoadingIntQue.jsx';
-
+import question from "../question.png";
 const InterviewQuestionCompo = () => {
     return (
         <>
             <div className='container'>
-                {/*------------------------------------- Basic Interview Question START ----------------------------------------------*/}
-                <h1 className='text-center shadow mt-5'> ReactJS Basic Interview Questions</h1>
-                <div className='mt-3'>
-                    {/* Question one */}
 
+                <div className="container mt-5">
+                    <div className="row justify-content-center">
+                        <div className="col-md-12 text-center">
+                            <div className="card shadow-lg border-0 rounded-4">
+                                <div className="card-body p-5">
+                                    <img src={question} />
+                                    <h2 className="fw-bold mb-3 text-primary">
+                                        {/* <i className="bi bi-mortarboard-fill me-2"></i> */}
+                                        Interview Quesition
+                                    </h2>
+                                    <p className="text-muted">
+                                        Learn React with <span className="fw-semibold">Class</span> and{" "}
+                                        <span className="fw-semibold">Functional Components</span>.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {/*------------------------------------- Basic Interview Question START ----------------------------------------------*/}
+                <div className='mb-4 shadow-sm mt-4 p-5'>
+                    {/* Question one */}
                     <h3><button className='bd-red shadow'>1</button> What are the features of React?</h3>
                     <p><strong className='text-decoration-underline fs-5 text-primary'>JSX:</strong> JSX is a syntax extension to JavaScript. It is used with React to describe what the user interface should look like. By using JSX, we can write HTML structures in the same file that contains JavaScript code.</p>
 
@@ -478,8 +497,8 @@ const InterviewQuestionCompo = () => {
                     {/* ----------------------------------------Basic Interview Question END----------------------------------- */}
 
 
-                <RouterIntQuestion />
-                <LazyLoadingIntQueCompo/>
+                    <RouterIntQuestion />
+                    <LazyLoadingIntQueCompo />
 
                 </div>
             </div>

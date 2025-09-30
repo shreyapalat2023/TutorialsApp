@@ -93,8 +93,11 @@ const router = createBrowserRouter([
                     <>
 
                         <div>
-                            <Suspense fallback={<>Loading...
-                            </>}>
+                            <Suspense fallback={<div className="d-flex justify-content-center align-items-center" style={{ minHeight: "200px" }}>
+                                <div className="spinner-border text-primary" role="status">
+                                    <span className="visually-hidden">Loading...</span>
+                                </div>
+                            </div>}>
                                 <FunctionCompoRoute />
                             </Suspense>
                         </div>
