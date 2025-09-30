@@ -1,10 +1,8 @@
-import React from 'react';
+
 
 const RouterIntQuestion = () => {
     return (
         <>
-            <h1 className='text-center shadow mt-5'> ReactJS Router Questions</h1>
-            {/*------------------------------------------------- Question one--------------------------------------------------- */}
             <h3><button className='bd-red'>01</button> What is React Router?</h3>
             <p>React Router is a popular library used in React applications to manage <mark>navigation</mark> and <mark> routing </mark> between different views or pages. It allows developers to build single-page applications (SPAs) with multiple views without the need to refresh the page, making the user experience smoother and faster.</p>
 
@@ -98,19 +96,13 @@ const RouterIntQuestion = () => {
             </ul>
             <p><strong>Example:</strong></p>
             <div className='alert alert-info p-3'>
-                import React from 'react';<br/>
-                import styles from './MyComponent.module.css'; <br/>
+                import React from 'react';<br />
+                import styles from './MyComponent.module.css'; <br />
 
-                function MyComponent() &#123; <br/>
-                return &lt;div className=&#123;styles.myClass&#125;&gt;Hello, World!&lt;/div&gt;;<br/>
+                function MyComponent() &#123; <br />
+                return &lt;div className=&#123;styles.myClass&#125;&gt;Hello, World!&lt;/div&gt;;<br />
                 &#125;
             </div>
-
-
-
-            {/*------------------------------------------ ReactJs Router Questions END  ------------------------------------------------------*/}
-
-
         </>
     );
 };

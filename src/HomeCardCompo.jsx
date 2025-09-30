@@ -12,7 +12,7 @@ import javascript from "./javascript.jpg";
 const HomeCardCompo = () => {
   return (
     <>
-      <h1>Available Courses</h1>
+      <h1 className='text-center mt-2'>Available Courses</h1>
       <MDBRow className='row-cols-1 row-cols-md-3 g-4 mx-3 my-4'>
         <MDBCol>
           <MDBCard className='h-100 card-hover'>

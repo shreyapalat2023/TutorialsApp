@@ -11,6 +11,8 @@ import {
 const FooterCompo = () => {
     return (
         <>
+        <h1 className='text-center mt-2'>Contact</h1>
+        <hr/>
             <MDBFooter className='bg-light text-center text-white'>
                 <MDBContainer className='p-4 pb-0'>
                     <section className='mb-4'>

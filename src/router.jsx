@@ -4,7 +4,7 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 
 // import { createRoot } from "react-dom/client";
 import {
-    // Outlet,
+    Outlet,
     // RouterProvider,
     createBrowserRouter
     // RouterProvider
@@ -15,6 +15,11 @@ import HomePage from "./homePage.jsx";
 import ExampleCompo from "./Component/exampleComp.jsx"
 import InterviewQuestionCompo from "./Component/InterviewQuestionCompo.jsx"
 import { Suspense, lazy } from 'react';
+import { BasicQue } from "./Component/Questions/BasicQue.jsx";
+import RouterIntQuestion from "./Component/Questions/RouterIntQuestion.jsx";
+import LazyLoadingIntQueCompo from "./Component/Questions/LazyLoadingIntQue.jsx";
+import FooterCompo from "./FooterCompo.jsx";
+import ClassComponMenu from "./examples/classComponent/classcomponentmenu.jsx";
 // import ClassCompoRoute from "./examples/classComponent/classrouter.jsx"
 // import FunctionCompoRoute from "./examples/functionalComponent/functionalrouter.jsx"
 const ClassCompoRoute = lazy(() => { return import("./examples/classComponent/classrouter.jsx") });
@@ -61,9 +66,11 @@ const router = createBrowserRouter([
 
             <>
                 <div>
-                    {/* <HeaderCompo />,
-                    <h1><Outlet/></h1> */}
+                    <HeaderCompo />,
+                    {/* <h1><Outlet/></h1> */}
                     <ExampleCompo />
+                    <FooterCompo/>
+
                 </div>
             </>
         ),
@@ -73,8 +80,7 @@ const router = createBrowserRouter([
                 element:
                     (
                         <>
-
-                            <div>
+                        <div>
                                 <Suspense fallback={<div className="d-flex justify-content-center align-items-center" style={{ minHeight: "200px" }}>
                                     <div className="spinner-border text-primary" role="status">
                                         <span className="visually-hidden">Loading...</span>
@@ -110,16 +116,40 @@ const router = createBrowserRouter([
     {
         path: "interviewquestion",
         element:
+        (
+
             <>
 
                 <div>
                     <HeaderCompo />
-
                     <InterviewQuestionCompo />
+                    <FooterCompo/>
                 </div>
             </>
+        ),
+        children:[
+            {
+                path:"basicquestion/*",
+                element:(
+                    <><BasicQue/></>
+                )
+            },
+            {
+                path:"routerquestion/*",
+                element:(
+                    <><RouterIntQuestion/></>
+                )
+            },
+            {
+                path:"lazyquestion/*",
+                element:(
+                    <><LazyLoadingIntQueCompo/></>
+                )
+            },
+        ]
 
-    }
+    },
+    
 ]);
 export default router;
 

@@ -9,7 +9,7 @@ const Tutorialcompo = () => {
   };
 
   return (
-    <div className="container my-4">
+    <div className="container-fluid mt-4">
       <div className="row">
         {/* Class Component Section */}
         <div className="col-md-6 mb-3">
