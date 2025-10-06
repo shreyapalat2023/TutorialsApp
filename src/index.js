@@ -3,7 +3,7 @@ import * as React from "react";
 import 'mdb-react-ui-kit/dist/css/mdb.min.css';
 import "@fortawesome/fontawesome-free/css/all.min.css";
 // import './assets/CSS/App.css';
-import router from "./router.jsx";
+import router from "./router/router.jsx";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import "./index.css";
 
